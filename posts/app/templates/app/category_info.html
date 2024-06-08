@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load static %}
+     <link rel="stylesheet" href="{% static 'app/category_info.css' %}">
+</head>
+<body>
+<form action="{% url 'edit_category' category_id=category.id %}" method="post" class="form">
+    <h1>Редактирование категории</h1>
+    {% csrf_token %}
+    Название категории <input type="text" name="category_name" value="{{category.name}}">
+    <button>save</button>
+</form>
+<form action="{% url 'category_delete' category_id=category.id %}" method="post" class="delete">
+    {% csrf_token %}
+    <button class="delete_button">delete</button>
+</form>
+
+
+<h1>{{category.name}}</h1>
+<div class="categories">
+     {% for post in posts %}
+        <div class="category">
+        <h2 class="category_info">{{post.id}}. {{post.title}}</h2></a>
+            </div>
+     {% endfor %}
+</div>
+
+</body>
+</html>

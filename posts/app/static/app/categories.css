@@ -1,0 +1,97 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("https://png.pngtree.com/background/20231017/original/pngtree-3d-rendering-of-supermarket-shelves-with-category-nameplates-picture-image_5591026.jpg");
+    margin: 0;
+    padding: 20px;
+    background-repeat: round;
+    background-size: cover;
+    width: 90vw;
+    height: 90vh;
+}
+        h2 {
+            font-size: 24px;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: #002aff;
+        }
+
+        form {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 30px auto 40px;
+            padding: 20px;
+            border: 1px solid #84ffe8;
+            border-radius: 20px;
+            background-image: url("https://newmedia.ua/wp-content/uploads/2024/04/individuality-identity-creative-design-logo-creation-1-1024x683.jpg");
+            background-size: cover;
+        }
+
+        input{
+            width: 60%;
+            padding: 10px;
+            border: 1px solid #84ffe8;
+            border-radius: 4px;
+            margin-top: 16px;
+            background: #bf99bd;
+            color: #158802;
+            text-align: center;
+            font-size: 16px;
+            max-width: 60%;
+            resize: none;
+
+        }
+
+
+        button {
+            padding: 10px 20px;
+            background-color: #00a517;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        a {
+            font-size: 24px;
+
+            display: block;
+            margin-top: 30px;
+            text-align: center;
+            text-decoration: none;
+            color: #8aff46;
+
+
+        }
+
+        a:hover {
+            color: #084ced;
+        }
+        .categories{
+
+             background-image: url("https://static6.depositphotos.com/1003264/539/i/450/depositphotos_5399216-stock-photo-alphabetical-filing-tray.jpg");
+            background-size: cover;
+            background-repeat: round;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            margin: 20px auto 20px;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .category{
+            margin: 20px auto 20px  ;
+            width: 70%;
+            border: 2px solid #ffffff;
+            border-radius: 10px;
+            padding: 10px;
+
+        }

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load static %}
+     <link rel="stylesheet" href="{% static 'app/post_info.css' %}">
+</head>
+<body>
+<form action="{% url 'edit_post' post_id=post.id %}" method="post" class="form">
+    <div class="header">Редактирование</div>
+    {% csrf_token %}
+    <pre>Название поста  </pre><input type="text" name="title" placeholder="title" value="{{post.title}}"><br><br>
+    <pre>Описание  </pre><textarea name="description"  placeholder="description"  >{{post.description}}</textarea><br><br>
+    <pre>Контент  </pre><textarea name="content"  placeholder="content">{{post.content}}</textarea><br><br>
+    <pre>Категория  </pre><select name="category_id" id="">
+         {% for category in categories %}
+            <option value="{{category.id}}"
+                    {% if category.id == post.category.id %} selected {% endif %}>{{category.name}}</option>
+        {% endfor %}
+
+    </select><br><br><br>
+    <button class="button">Сохранить</button><br><br><br>
+</form>
+<form action="{% url 'post_delete' post_id=post.id %}" method="post" class="delete">
+    {% csrf_token %}
+    <button class="delete_button">delete</button>
+</form>br><br><br>
+
+<h2>Комментарии</h2><br><br><br>
+
+<form action="{% url 'add_comment' %}" method="post" class="add_comment form">
+    <div class="header">Добавить комментарий</div>
+    {% csrf_token %}
+
+    <input type="text" name="author" placeholder="author"><br><br>
+    <input type="hidden" name="post_id" value="{{post.id}}"><br><br>
+    <textarea name="comment" placeholder="comment"></textarea><br><br>
+
+    </select><br><br><br>
+    <button>Сохранить</button><br><br><br>
+</form>
+<div class="comments">
+     {% for comment in comments %}
+    <div class="comment">
+        <div class="comment_data">
+        <h2 class="comment_info">{{comment.id}}. {{comment.author}}</h2>   <h2 class="comment_info">{{comment.published_at}}</h2>
+            </div>
+        <p>{{comment.text}}</p>
+</div>
+     {% endfor %}
+
+</div>
+</body>
+</html>

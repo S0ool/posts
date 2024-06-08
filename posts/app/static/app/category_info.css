@@ -1,0 +1,143 @@
+ body {
+     font-family: Arial, sans-serif;
+     margin: 0;
+     padding: 20px;
+     background-image: url("https://leaderteam.ru/storage/0_2_d497bfab.jpg");
+     background-size: cover;
+     background-repeat: round;
+ }
+
+        h2,h1 {
+            font-size: 24px;
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            color: #002aff;
+
+        }
+
+        .form {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 30px auto 40px;
+            padding: 20px;
+            border: 1px solid #84ffe8;
+            border-radius: 20px;
+            background-image: url("https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2021/12/How-to-Edit-Categories-in-WordPress.webp");
+            background-size: cover;
+            background-repeat: round;
+            color: #df9100;
+            font-size: 20px;
+        }
+
+        input{
+            width: 60%;
+            padding: 10px;
+            border: 1px solid #0016a6;
+            border-radius: 4px;
+            margin-top: 25px;
+            background: #ffffff;
+            text-align: center;
+            font-size: 16px;
+            max-width: 60%;
+
+        }
+        select{
+            color: gray;
+            border: 1px solid #84ffe8;
+            min-width: 20%;
+            padding: 10px;
+            background: #1b1b1b;
+
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #003c5a;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-bottom: 20px;
+            margin-top: 30px    ;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        a {
+            font-size: 24px;
+
+            display: block;
+            margin-top: 30px;
+            text-decoration: none;
+            color: #004bff;
+
+
+        }
+
+        a:hover {
+            color: #89a5e3;
+        }
+        .categories{
+             background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi8a-Pl254iaxI-_0wP6_jV85qkCtzQIAj3Q&s");
+            background-size: contain;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            margin: 20px auto 20px;
+            flex-wrap: wrap;
+
+
+        }
+        .category{
+            margin: 40px auto 20px  ;
+            width: 70%;
+            border: 2px solid #ffffff;
+            border-radius: 10px;
+            color: white;
+            padding: 10px;
+
+
+        }
+.header{
+    font-size: 24px;
+    margin: 20px auto 20px;
+}
+pre{
+    color: rgb(105, 184, 40);
+    font-size: 20px;
+}
+.delete{
+    margin: 20px auto 20px;
+    width: 30%;
+    background-image: url("https://recovery-software.ru/wp-content/themes/soft/images/blog/full-delete/delete.jpg");
+    background-size: cover;
+    background-repeat: round;
+    height: 300px;
+    border-radius: 40px;
+}
+.delete_button{
+    width: 65%;
+    height: 30vh;
+    background: rgba(126, 38, 25, 0);
+    font-size: 72px;
+    color: rgba(255, 0, 0, 0);
+    margin-left: 17%;
+    margin-top: 1%;
+    padding: 0;
+}
+
+.category_info{
+    color: #cefff2;
+    background: rgba(0, 0, 0, 0.3);
+    max-width: 70%;
+    display: flex;
+    margin: 20px auto 20px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    }
